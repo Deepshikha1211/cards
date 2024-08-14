@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color:black;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            padding: 20px;
+            transition: transform 0.2s;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-content {
+            display: none;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #046070;
+        }
+        .card.open .card-content {
+            display: block;
+        }
+
+        h3 {
+            color: rgb(3, 59, 61);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card" onclick="toggleCard(this)">
+        <h3>HTML</h3>
+        <div class="card-content">
+            <img src="HTML1.webp" alt="HTML">
+            <p>HTML, or HyperText Markup Language, is the standard markup language used to create web pages. It’s a combination of Hypertext, which defines the link between web pages, and Markup language, which is used to define the text document within tags to structure web pages. This language is used to annotate text so that machines can understand and manipulate it accordingly. HTML is human-readable and uses tags to define what manipulation has to be done on the text. HTML is the standard markup language for Web pages.</p>
+        </div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <h3>CSS</h3>
+        <div class="card-content">
+            <img src="css.jpg" alt="CSS">
+            <p>CSS (Cascading Style Sheets) is a language designed to simplify the process of making web pages presentable. It allows you to apply styles to HTML documents, describing how a webpage should look by prescribing colors, fonts, spacing, and positioning. CSS provides developers and designers with powerful control over the presentation of HTML elements.
+
+                HTML uses tags and CSS uses rulesets. CSS styles are applied to the HTML element using selectors. CSS is easy to learn and understand, but it provides powerful control over the presentation of an HTML document.</p>
+        </div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <h3>JavaScript</h3>
+        <div class="card-content">
+            <img src="js.jpg" alt="JavaScript">
+            <p>JavaScript is a lightweight, cross-platform, single-threaded, and interpreted compiled programming language. It is also known as the scripting language for webpages. It is well-known for the development of web pages, and many non-browser environments also use it.
+
+                JavaScript is a weakly typed language (dynamically typed). JavaScript can be used for Client-side developments as well as Server-side developments. JavaScript is both an imperative and declarative type of language. JavaScript contains a standard library of objects, like Array, Date, and Math, and a core set of language elements like operators, control structures, and statements. </p>
+        </div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <h3>Python</h3>
+        <div class="card-content">
+            <img src="python.jpg" alt="Python">
+            <p>Python is a programming language that is interpreted, object-oriented, and considered to be high-level too. What is Python? Python is one of the easiest yet most useful programming languages which is widely used in the software industry. People use Python for Competitive Programming, Web Development, and creating software. Due to its easiest syntax, it is recommended for beginners who are new to the software engineering field. Its demand is growing at a very rapid pace due to its vast use cases in Modern Technological fields like Data Science, Machine learning, and Automation Tasks.</p>
+        </div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <h3>Java</h3>
+        <div class="card-content">
+            <img src="java.jpg" alt="Java">
+            <p>Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is intended to let application developers write once, and run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java was first released in 1995 and is widely used for developing applications for desktop, web, and mobile devices. Java is known for its simplicity, robustness, and security features, making it a popular choice for enterprise-level applications.</p>
+        </div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <h3>Computer Science</h3>
+        <div class="card-content">
+            <img src="cse.jpg" alt="Computer Science">
+            <p>CSE engineering comprises the basic knowledge of computer programming and networking. The computer science engineering course will give ample knowledge about the implementation, design and management of the entire information system in hardware and software aspects.  computer science engineering is a study that encompasses the theory of computation and the design and implementation of computational systems. </p>
+        </div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <h3>Range Rover</h3>
+        <div class="card-content">
+            <img src="rr.jpg" alt="Card 7">
+            <p>The Land Rover Range Rover, generally shortened to Range Rover, is a 4x4 luxury SUV produced by Land Rover, a marque and sub-brand of Jaguar Land Rover. The Range Rover line was launched in 1970 by British Leyland and is now in its fifth generation.
+
+                Additional models have been launched under the Range Rover name, including the Range Rover Sport, Range Rover Evoque, and Range Rover Velar.</p>
+        </div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <h3>Olympic</h3>
+        <div class="card-content">
+            <img src="olympic.jpg" alt="Card 8">
+            <p>The modern Olympic Games (OG; or Olympics; French: Jeux olympiques, JO)[a][1] are the world's leading international sporting events. They feature summer and winter sports competitions in which thousands of athletes from around the world participate in a variety of competitions. The Olympic Games are considered the world's foremost sports competition, with more than 200 teams, representing sovereign states and territories, participating. By default, the Games generally substitute for any world championships during the year in which they take place (however, each class usually maintains its own records).[2] The Olympic Games are held every four years. </p>
+        </div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <h3>Taj Mahal</h3>
+        <div class="card-content">
+            <img src="Taj_Mahal.jpeg" alt="Card 9">
+            <p>The Taj Mahal (/ˌtɑːdʒ məˈhɑːl, ˌtɑːʒ-/; lit. 'Crown of the Palace') is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan (r. 1628–1658) to house the tomb of his beloved wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.</p>
+        </div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <h3>Jaipur</h3>
+        <div class="card-content">
+            <img src="Jaipur.webp" alt="Card 10">
+            <p>Jaipur is the capital and the largest city of the north-western Indian state of Rajasthan. As of 2011, the city has a population of 3.1 million, making it the tenth most populous city in the country. Located 268 km (167 miles) from the national capital New Delhi, Jaipur is also known as the Pink City due to the dominant color scheme of its buildings in old city.</p>
+        </div>
+    </div>
+    <div class="card" onclick="toggleCard(this)">
+        <h3>Monuments</h3>
+        <div class="card-content">
+            <img src="https://via.placeholder.com/300x200?text=Card+11" alt="Card 11">
+            <p>A monument is a type of structure that was explicitly created to commemorate a person or event, or which has become relevant to a social group as a part of their remembrance of historic times or cultural heritage, due to its artistic, historical, political, technical or architectural importance.[1] Examples of monuments include statues, (war) memorials, historical buildings, archaeological sites, and cultural assets. If there is a public interest in its preservation, a monument can for example be listed as a UNESCO World Heritage Site</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <h3>Python</h3>
+        <div class="card-content">
+            <img src="python.jpg" alt="Python">
+            <p>Python is a programming language that is interpreted, object-oriented, and considered to be high-level too. What is Python? Python is one of the easiest yet most useful programming languages which is widely used in the software industry. People use Python for Competitive Programming, Web Development, and creating software. Due to its easiest syntax, it is recommended for beginners who are new to the software engineering field. Its demand is growing at a very rapid pace due to its vast use cases in Modern Technological fields like Data Science, Machine learning, and Automation Tasks.</p>
+        </div>
+    </div>
+   
+
+<script>
+    function toggleCard(card) {
+        card.classList.toggle('open');
+    }
+</script>
+
+</body>
+</html>
